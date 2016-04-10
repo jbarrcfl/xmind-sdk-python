@@ -35,6 +35,13 @@ def save(workbook, path=None):
     saver = WorkbookSaver(workbook)
     saver.save(path)
 
+def save_all(workbook, path=None):
+    """ Save workbook to given path with all reference in xmind zip file except Revisions.
+    If path not given, then will save to path that set to workbook.
+
+    """
+    saver = WorkbookSaver(workbook)
+    saver.save_all(path)
 
 def main():
     pass
