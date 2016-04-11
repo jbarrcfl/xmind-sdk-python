@@ -69,7 +69,7 @@ class WorkbookSaver(object):
         myzip = utils.extract(old_path)
         with myzip as input_stream:
             for name in input_stream.namelist():
-                print(name)
+
                 if name == const.CONTENT_XML:
                     continue
                 if const.REVISIONS_DIR in name:
