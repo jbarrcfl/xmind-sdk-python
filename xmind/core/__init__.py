@@ -308,8 +308,7 @@ class Element(Node):
                 self._node.removeChild(node)
 
         text = DOM.Text()
-        #text.data = data.decode("utf8")
-        text.data = data
+        text.data = data.decode("utf8")
 
         self._node.appendChild(text)
 
